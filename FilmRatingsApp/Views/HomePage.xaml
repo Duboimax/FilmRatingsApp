@@ -6,7 +6,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="ContentArea">
-        
-    </Grid>
+    <RelativePanel>
+        <TextBlock
+            x:Name="NomAppli"
+            FontSize="32"
+            FontWeight="Bold"
+            Foreground="White"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Vince’s Best Movies" />
+        <Image
+            x:Name="logo"
+            Margin="0,50,0,0"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="NomAppli"
+            Source="https://play-lh.googleusercontent.com/IO3niAyss5tFXAQP176P0Jk5rg_A_hfKPNqzC4gb15WjLPjo5I-f7oIZ9Dqxw2wPBAg" />
+    </RelativePanel>
 </Page>
