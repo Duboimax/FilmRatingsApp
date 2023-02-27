@@ -14,6 +14,7 @@ public sealed partial class UtilisateurPage : Page
     public UtilisateurPage()
     {
         ViewModel = App.GetService<UtilisateurViewModel>();
+        DataContext= ViewModel;
         InitializeComponent();
     }
 }

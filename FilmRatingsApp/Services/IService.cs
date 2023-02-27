@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using API_Film.Models.EntityFramework;
 using FilmRatingsApp.Models;
 
 namespace FilmRatingsApp.Services;

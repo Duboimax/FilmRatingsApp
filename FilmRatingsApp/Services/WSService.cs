@@ -5,6 +5,7 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
+using API_Film.Models.EntityFramework;
 using FilmRatingsApp.Models;
 using Windows.ApplicationModel.UserDataTasks;
 
@@ -49,7 +50,7 @@ public class WSService : IService
     {
         try
         {
-            return await client.GetFromJsonAsync<Utilisateur>($"/api/utilisateurs/GetByEmail/{email}");
+            return await client.GetFromJsonAsync<Utilisateur>($"/api/utilisateurs/getbyemail/{email}");
         }
         catch (Exception)
         {
